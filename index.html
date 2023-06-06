@@ -11,7 +11,8 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <!--Site header with navigation-->
+        <header class="header">
             <h1>My site</h1>
             <nav>
                 <ul>
@@ -34,28 +35,75 @@
             </nav>
         </header>
 
+        <!--Site main content-->
         <main>
             <section class="content" id="home">
                 <h2>Home</h2>
                 <p>Some Home content</p>
             </section>
+
+            <!--Catalog users table-->
             <section class="content" id="news">
                 <h2>News</h2>
                 <p>Some News content</p>
             </section>
+
             <section class="content" id="catalog">
                 <h2>Catalog</h2>
-                <p>Some Catalog content</p>
+                <p>Some Catalog of users</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Firstname</th>
+                            <th>Lastname </th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>User A name</td>
+                            <td>User A Lastname</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>User B name</td>
+                            <td>User B Lastname</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>User C name</td>
+                            <td>User C Lastname</td>
+                            <td>31</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <td>3 Total</td>
+                        <td>31 Average age</td>
+                    </tfoot>
+                </table>
             </section>
+
             <section class="content" id="about">
                 <h2>About</h2>
                 <p>Some About content</p>
             </section>
+
             <section class="content" id="faq">
                 <h2>FAQ</h2>
                 <p>Some FAQ content</p>
             </section>
+
         </main>
+
+        <!--Site footer-->
+        <footer class="footer">
+            <span>My site</span>
+        </footer>
     </div>
 
     <script src='./scripts/index.js'></script>
