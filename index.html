@@ -11,9 +11,11 @@
 
 <body>
     <div class="wrapper">
-        <!--Site header with navigation-->
+        <!-- Site header with navigation -->
         <header class="header">
             <h1>My site</h1>
+            <p>My site content</p>
+
             <nav>
                 <ul>
                     <li>
@@ -29,7 +31,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#faq">FAQ</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -93,9 +95,18 @@
                 <p>Some About content</p>
             </section>
 
-            <section class="content" id="faq">
-                <h2>FAQ</h2>
-                <p>Some FAQ content</p>
+            <!--Send email form-->
+            <section class="content" id="contact">
+                <h2>Contact</h2>
+                <p>Some Contact content</p>
+
+                <form action="mailto:mail@mail.com">
+                    <input type="text" name="subject">
+                    <textarea name="body"></textarea>
+                    <input type="submit" value="email">
+                </form>
+
+                <a href="mailto:anna.semenyshyn18@gmail.com?subject=Subject&body=Body">Send me test email</a>
             </section>
 
         </main>

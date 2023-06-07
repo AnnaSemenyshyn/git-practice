@@ -47,3 +47,8 @@ td {
 table {
     background-color: cornflowerblue;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
