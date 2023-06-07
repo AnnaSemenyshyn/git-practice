@@ -1,8 +1,54 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
 .wrapper {
+
+    background-color: aquamarine;
+}
+
+.header {
+    background-color: fuchsia;
+}
+
+.footer {
+    background-color: darkmagenta;
+}
+
+.content {
     display: flex;
-    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    margin-block: 50px;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    background-color: cornflowerblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
