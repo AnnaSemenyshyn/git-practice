@@ -41,10 +41,54 @@
         <main>
             <section class="content" id="home">
                 <h2>Home</h2>
-                <p>Some Home content</p>
+                <p>Some home content</p>
+
+                <!-- User form for create user-->
+                <form>
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter user name" required>
+
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter user lastname">
+
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="Enter user age">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter user password" required>
+
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-password" id="confirm-password"
+                        placeholder="Confirm user password" required>
+
+                    <label for="role">Select user role</label>
+                    <select name="role" id="role">
+                        <option>Guest</option>
+                        <option>User</option>
+
+                        <optgroup label="manager type">
+                            <option>Manager 1</option>
+                            <option>Manager 2</option>
+                            <option>Manager 3</option>
+                        </optgroup>
+
+                        <option>Admin</option>
+                    </select>
+
+                    <label for="rules">Site ruled</label>
+                    <input type="checkbox" name="rules" id="rules" required>
+
+                    <label for="theme">Site theme</label>
+                    <input type="radio" name="theme" id="theme">
+
+                    <button type="submit">Create</button>
+
+                    <!-- <input type="range" name="asd" max="20" placeholder="Enter user age"> -->
+                    <!-- <input type="date"> -->
+                </form>
             </section>
 
-            <!--Catalog users table-->
+            <!--Site news-->
             <section class="content" id="news">
                 <h2>News</h2>
                 <p>Some News content</p>
@@ -100,10 +144,10 @@
                 <h2>Contact</h2>
                 <p>Some Contact content</p>
 
-                <form action="mailto:mail@mail.com">
+                <form action="mailto:mail@mail.mail">
                     <input type="text" name="subject">
                     <textarea name="body"></textarea>
-                    <input type="submit" value="email">
+                    <input type="submit" value="send email">
                 </form>
 
                 <a href="mailto:mail.mail@mail.mail?subject=Subject&body=Body">Send me test email</a>
